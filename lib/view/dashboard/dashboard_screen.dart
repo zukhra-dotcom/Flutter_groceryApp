@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:get/get.dart';
 import 'package:grocery_app/controller/dashboard_controller.dart';
+import 'package:grocery_app/view/account/account_screen.dart';
 import 'package:grocery_app/view/category/category_screen.dart';
 import 'package:grocery_app/view/home/home_screen.dart';
 import 'package:grocery_app/view/product/product_screen.dart';
@@ -18,13 +19,11 @@ class DashboardScreen extends StatelessWidget {
         body: SafeArea(
           child: IndexedStack(
             index: controller.tabIndex,
-            children: [
-              const HomeScreen(),
-              const ProductScreen(),
-              const CategoryScreen(),
-              Container(
-                color: Colors.orange,
-              )
+            children: const[
+              HomeScreen(),
+              ProductScreen(),
+              CategoryScreen(),
+              AccountScreen()
             ],
           ),
         ),
