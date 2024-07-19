@@ -6,7 +6,7 @@ import '../../controller/product_controller.dart';
 class DashboardBinding extends Bindings{
   @override
   void dependencies() {
-    Get.put(DashboardControler());
+    Get.put(DashboardController());
     Get.put(HomeController());
     Get.put(ProductController());
   }

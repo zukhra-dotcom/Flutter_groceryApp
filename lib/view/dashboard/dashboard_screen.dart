@@ -11,7 +11,7 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return GetBuilder<DashboardControler>(
+    return GetBuilder<DashboardController>(
       builder: (controller) => Scaffold(
         backgroundColor: Colors.grey.shade100,
         body: SafeArea(
